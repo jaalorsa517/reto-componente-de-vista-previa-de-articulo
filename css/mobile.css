@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+* {
+    --first: hsl(217, 19%, 35%);
+    --second: hsl(214, 17%, 51%);
+    --third: hsl(212, 23%, 69%);
+    --fourth: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background: var(--fourth);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin: 80px 25px;
+    background: white;
+    height: auto;
+    position: relative;
+}
+
+.main-container .image-container {
+    border-radius: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container .image-container img {
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.main-container .info-container {
+    margin: 25px 25px 0 30px;
+}
+
+.main-container .info-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container .info-general .title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--first);
+}
+
+.main-container .info-general .description {
+    width: 100%;
+    font-weight: 500;
+    font-size: 0.858rem;
+    line-height: 1.6;
+    color: var(--second);
+}
+
+.main-container .info-share {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    position: relative;
+}
+
+.info-share figure {
+    margin: 0 15px 0 0;
+}
+
+.info-share figure img {
+    width: 48px;
+    height: 48px;
+    background-size: 100% 100%;
+    border-radius: 100%
+}
+
+.info-share .user-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.info-share .user-container .user {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--first);
+}
+
+.info-share .user-container .date {
+    font-weight: 500;
+    font-size: 0.858rem;
+    color: var(--third);
+}
+
+.info-share .button-share {
+    width: 32px;
+    height: 32px;
+    background-size: 16px 16px;
+    background-image: url('../images/icon-share.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: var(--fourth);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.main-container .share {
+    display: none;
+    background: var(--first);
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    transition: opacity 0.3s;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    color: white
+}
+
+.main-container .share .share-title {
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: var(--third);
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+}
+
+.main-container .social-media-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.main-container .social-media-container .icons {
+    width: 24px;
+    height: 24px;
+    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.main-container .social-media-container .icon-face {
+    background-image: url('../images/icon-facebook.svg');
+}
+
+.main-container .social-media-container .icon-twitter {
+    background-image: url('../images/icon-twitter.svg');
+}
+
+.main-container .social-media-container .icon-pinterest {
+    background-image: url('../images/icon-pinterest.svg');
+}
+
+.main-container #button-share {
+    width: 32px;
+    height: 32px;
+    background-size: 16px 16px;
+    background-image: url('../images/icon-share-select.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: var(--second);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 20px;
+}

@@ -8,8 +8,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/desktop.css">
 
-  <script defer src="./scripts/event.js"></script>
   <title>Frontend Mentor | Article preview component</title>
 
   <style>
@@ -51,26 +51,29 @@
             28 Jun 2020
           </span>
         </div>
-        <svg class="button-share"></svg>
+        <svg class="button-share">
+          <span class="share">
+            <span class="share-title">
+              Share
+            </span>
+            <div class="social-media-container">
+              <svg class="icons icon-face"></svg>
+              <svg class="icons icon-twitter"></svg>
+              <svg class="icons icon-pinterest"></svg>
+            </div>
+            <svg class="button-share" id="button-share">
+            </svg>
+          </span>
+        </svg>
       </section>
     </main>
-    <span class="share">
-      <span class="share-title">
-        Share
-      </span>
-      <div class="social-media-container">
-        <svg class="icons icon-face"></svg>
-        <svg class="icons icon-twitter"></svg>
-        <svg class="icons icon-pinterest"></svg>
-      </div>
-      <svg class="button-share" id="button-share" >
-      </svg>
-    </span>
+
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Jaime Ortiz</a>.
   </div>
+  <script src="./scripts/event.js"></script>
 </body>
 
 </html>

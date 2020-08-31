@@ -70,7 +70,7 @@ body {
 .main-container .info-share {
     display: flex;
     justify-content: space-between;
-    margin: 25px 0;
+    margin: 25px 0 10px 0;
     position: relative;
 }
 
@@ -113,26 +113,25 @@ body {
     background-color: var(--fourth);
     border-radius: 100%;
     cursor: pointer;
+    position: relative;
 }
 
-.main-container .share {
+.share {
     display: none;
     background: var(--first);
     z-index: 1;
     position: absolute;
-    bottom: 20px;
-    left: 0;
+    bottom: -10px;
+    left: -30px;
     transition: opacity 0.3s;
-    border-radius: inherit;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 0 0 15px 15px;
     align-items: center;
     height: 80px;
-    width: 100%;
+    width: calc(100% + 55px);
     color: white
 }
 
-.main-container .share .share-title {
+.share .share-title {
     text-transform: uppercase;
     margin-left: 20px;
     color: var(--third);
@@ -140,13 +139,13 @@ body {
     font-size: 0.9rem;
 }
 
-.main-container .social-media-container {
+.social-media-container {
     display: flex;
     align-items: center;
     flex-grow: 2;
 }
 
-.main-container .social-media-container .icons {
+.social-media-container .icons {
     width: 24px;
     height: 24px;
     color: white;
@@ -157,19 +156,23 @@ body {
     margin: 0 10px;
 }
 
-.main-container .social-media-container .icon-face {
+.social-media-container .icons:hover {
+    background-color: var(--third);
+}
+
+.social-media-container .icon-face {
     background-image: url('../images/icon-facebook.svg');
 }
 
-.main-container .social-media-container .icon-twitter {
+.social-media-container .icon-twitter {
     background-image: url('../images/icon-twitter.svg');
 }
 
-.main-container .social-media-container .icon-pinterest {
+.social-media-container .icon-pinterest {
     background-image: url('../images/icon-pinterest.svg');
 }
 
-.main-container #button-share {
+#button-share {
     width: 32px;
     height: 32px;
     background-size: 16px 16px;
